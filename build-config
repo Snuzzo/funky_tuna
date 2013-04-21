@@ -1,0 +1,33 @@
+TOOLCHAINDIR=~/toolchain
+
+TOOLCHAIN=arm-eabi-4.6
+
+CROSS_COMPILE=$TOOLCHAINDIR/$TOOLCHAIN/bin/arm-eabi-
+
+LOCAL_BUILD_DIR=~/toro
+
+TARGET_DIR=~/toro/updates
+
+FTPTARGETDIR="/kernels/toro"
+
+SYSTEM_PARTITION="/dev/block/platform/omap/omap_hsmmc.0/by-name/system"
+
+DEFCONFIG=tuna_auto_defconfig
+
+FLASH_BOOT='/dev/block/platform/omap/omap_hsmmc.0/by-name/boot'
+
+PHONE='Galaxy Nexus'
+
+# ----
+
+N_CORES=8
+VERSION=FunkyKernel-v1.1
+
+# ----
+
+BANNER=`cat <<EOF
+ui_print("Funky Kernel");
+ui_print("for");
+ui_print("$PHONE");
+ui_print("$VERSION");
+EOF`
