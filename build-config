@@ -1,6 +1,6 @@
 TOOLCHAINDIR=~/toolchain
 
-TOOLCHAIN=arm-eabi-4.6
+TOOLCHAIN=arm-eabi-4.7
 
 CROSS_COMPILE=$TOOLCHAINDIR/$TOOLCHAIN/bin/arm-eabi-
 
@@ -21,7 +21,7 @@ PHONE='Galaxy Nexus'
 # ----
 
 N_CORES=8
-VERSION=FunkyKernel-v1.2
+VERSION=FunkyKernel-v1.3
 
 # ----
 
